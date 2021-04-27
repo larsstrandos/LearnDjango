@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Courses List</h1>
+    {% for instance in object_list %}
+        <ul>
+            <li>{{ instance.id }} - {{ instance.title }}</li>
+        </ul>
+    {% endfor %}
+{% endblock %}
